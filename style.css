@@ -1,0 +1,1055 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(135deg, #A9A9A9, #C0C0C0, #D3D3D3, #DCDCDC); */
+    background-color: #f7f7f7;
+}
+
+
+
+
+
+
+
+/*  formatação do header */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+img.logo{
+    width: 5vw;
+}
+ul{
+    display: flex;
+    align-self: center;
+}
+li{
+    padding-left: 5rem;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+header a{
+    text-decoration: none;
+    color: #f5f5f5
+}
+header a:hover{
+    font-weight: bolder;
+    color: white;
+}
+section.botao{
+    display: flex;
+    align-self: center;
+    padding-right: 2rem;
+}
+header button{
+    padding: 0.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: rgba(240, 240, 240, 0.781);
+}
+img#login{
+    width: 0.9rem;
+}
+
+
+
+
+
+
+
+
+/*formatação do main*/
+
+
+/*Estilização da página inicio*/
+/*carrossel*/
+section.carrossel1{
+    overflow: hidden;
+    background-color: black;
+    height: 70vh;
+    width: 60vw;
+    margin: auto;    
+}
+div.carrossel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+section.carrossel1 img{ 
+    width: 60vw;
+    height: 70vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+#carrossel1,#carrossel2,#carrossel3{
+    cursor: pointer;
+} 
+
+
+
+
+/*Apresentação */
+section.apresentacao{
+    background-color: black;
+    margin: auto;
+    color: aliceblue;
+    width: 60vw;
+    padding: 2rem 1rem 2rem 1rem;
+}
+section.apresentacao h1{
+    text-align: center;
+}
+section.apresentacao p{
+    text-align: justify;
+}
+section.apresentacao a {
+text-decoration: none;
+color: #e72313;
+}
+section.apresentacao a:hover {
+    transition: 0.4s ease-in-out;
+    color: #e72513b9;
+}
+
+
+
+/*Estilização da página loja*/
+/*lista de produtos*/
+section.ofertas{
+    background-color: black;
+    margin: auto;
+    width: 60vw;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+section.ofertas h1{
+    color: aliceblue;
+    text-align: center;
+}
+section.ofertas h2{
+    color: aliceblue;
+    padding-top: 1rem;
+}
+div.ofertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section.ofertas img{
+    width: 10vw;
+    
+}
+.addCarrinho{
+    padding: 0.4rem 0.2rem;
+    color: whitesmoke;
+    background-color: #ff0000;
+    border-radius: 0.7rem;
+    text-transform: uppercase;
+}
+.addCarrinho:hover{
+    color: #ff0000;
+    background-color: whitesmoke;
+    transition: 0.4s;
+}
+/*cores: #d4a979, #f7bb75, #e72313 */
+#jogo01,#jogo02,#jogo03,#jogo04,#jogo05,#jogo06,#jogo07,#jogo08,#jogo09,#jogo10,#jogo11,#pre01,#pre02,#gc01,#gc02,#gc03,#gc04,#gc05,#gc06{
+    background-color: #f7bb75;
+    border-radius: 1rem;
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: space-around;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+
+/*Tabela do carrinho de compras */
+section.paginaCarrinho{
+    width: 60vw;
+    /* height: 40rem; */
+    margin: auto;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+section.paginaCarrinho h2{
+    color: aliceblue;
+    padding-top: 1rem;
+    text-align: center;
+}
+section.paginaCarrinho table{
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin: auto;
+    background-color: #f7bb75;
+    font-weight: bolder;
+    border-collapse: collapse;
+    padding-top: 2rem;
+    min-width: 40rem;
+}
+.cabecalhoTabela{
+    border-bottom: 0.1rem solid whitesmoke;
+    text-align: start;
+    padding-bottom: 0.2rem;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+.finalTabela{
+    border-top: 0.1rem solid whitesmoke;
+    text-align: end;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem 0 0;
+}
+section.paginaCarrinho td{
+    padding: 1vw 0.5vw;
+}
+section.paginaCarrinho img{
+    width: 6vw;  
+}
+.quantProduto{
+    width: 3rem;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    border: 2px solid black;
+    background-color: #eee;
+    margin-right: 1.2rem;
+}
+button.botaoRemovedor{
+    padding: 0.7rem 0.5rem;
+    color: whitesmoke;
+    background-color: #ff0000;
+    border-radius: 0.7rem;
+}
+button.botaoRemovedor:hover{
+    filter: brightness(0.8);
+    transition: 0.2s;
+}
+.botaoDeCompra{
+    margin: 0.3rem auto 0;
+    display: flex;
+    background-color: #56c5db;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 0.7rem;
+    padding: 0.6rem 0.4rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.botaoDeCompra:hover{
+    filter: brightness(0.8);
+    transition: 0.2s;
+}
+main button{
+    background-color: rgb(254, 255, 254);
+    font-weight: bolder;
+    border-radius: 1.3rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*Estilização da página contatos */
+.pagContato{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    width: 60vw;
+    color: whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.pagContato h3{
+    text-align: center;
+}
+.pagContato table{
+    background-color: #f7bb75;
+    font-weight: bolder;
+}
+.icon{
+    text-align: center;
+}
+.pagContato a:hover{
+    -webkit-filter: drop-shadow(7px 5px 3px black);
+    filter: drop-shadow(7px 5px 3x black);
+}
+
+
+
+
+
+
+
+
+/*formatação do footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black; 
+}
+footer span{
+    color: aliceblue;
+    display: flex;
+    align-self: center;
+}
+section.dev{
+    color: aliceblue;
+    display: flex;
+    align-self: center;
+}
+section.designer{
+    color: aliceblue;
+    display: flex;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+/*Tela de televisão*/
+@media (max-width: 2560px){
+    /*Header*/
+    img.logo{
+        width: 9vw;
+    }
+    li{
+        font-size: 50px;
+    }
+    header button{
+        height: 5vh;
+    }
+    .botao button{
+        font-size: 35px;
+    }
+    img#login{
+        width: 2.4rem;
+    }
+
+
+        /*Main*/
+    /*Página Inicio*/
+    section.carrossel1{
+        height: 70vh;
+        width: 60vw;  
+    }
+    section.carrossel1 img{ 
+        height: 70vh;
+        width: 60vw;
+    }
+    section.apresentacao{
+        width: 60vw;
+    }
+    section.apresentacao h1{
+        font-size: 55px;
+    }
+    section.apresentacao p{
+        font-size: 48px;
+    }
+
+    /*Página Loja*/
+    /*Loja*/
+    section.ofertas h1{
+        font-size: 55px;
+    }
+    section.ofertas h2{
+        font-size: 47px;
+    }
+    div.ofertas{
+        width: auto;
+    }
+    section.ofertas img{
+        width: 17vw;   
+    }
+    .addCarrinho{
+        height: 4vh;
+        font-size: 25px;
+    }
+    .nomeJogo{
+        font-size: 38px;
+    }
+    .preco{
+        font-size: 35px;
+    }
+
+    /*Carrinho*/
+    section.paginaCarrinho{
+        width: 60vw;
+    }
+    section.paginaCarrinho h2{
+        font-size: 47px;
+    }
+    section.paginaCarrinho table{
+        width: 44vw;
+    }
+    .cabecalhoTabela{
+        font-size: 30px;
+    }
+    .finalTabela{
+        font-size: 30px;
+    }
+    .produtoCarrinho span{
+        font-size: 27px;
+    }
+    .quantProduto{
+        width: 2vw;
+        height: 2.7vh;
+    }
+    button.botaoRemovedor{
+        width: 5.4vw;
+        font-size: 18px;
+    }
+    .botaoDeCompra{
+        height: 4vh;
+        font-size: 25px;
+    }
+
+
+
+
+    /*Página contato*/
+    .pagContato table{
+        width: 25vw;
+    }
+    .pagContato h3{
+        font-size: 38px;
+    }
+    .pagContato p {
+        font-size: 30px;
+    }
+    .pagContato th, td{
+        font-size: 32px;
+    }
+    .icon img{
+        width: 3vw;
+    }
+
+
+
+    /*Footer*/
+    footer span{
+        font-size: 40px;
+    }
+    section.dev{
+        font-size: 40px;
+    }
+    section.designer{
+        font-size: 40px;
+    }
+
+}
+
+/*Transição*/
+@media (max-width: 2080px){
+    /*Header*/
+    img.logo{
+        width: 10vw;
+    }
+    li{
+        font-size: 25px;
+    }
+    header button{
+        height: 4.8vh;
+    }
+    .botao button{
+        font-size: 15px;
+    }
+    img#login{
+        width: 1rem;
+    }
+
+
+
+        /*Main*/
+    /*Página Inicio*/
+    section.carrossel1{
+        height: 68vh;
+        width: 60vw;  
+    }
+    section.carrossel1 img{ 
+        height: 68vh;
+        width: 60vw;
+    }
+    section.apresentacao{
+        width: 60vw;
+    }
+    section.apresentacao h1{
+        font-size: 30px;
+    }
+    section.apresentacao p{
+        font-size: 20px;
+    }
+
+
+
+    /*Página Loja*/
+    /*Loja*/
+    section.ofertas{
+        width: 60vw;
+    }
+    section.ofertas h1{
+        font-size: 30px;
+    }
+    section.ofertas h2{
+        font-size: 25px;
+    }
+    div.ofertas{
+        width: auto;
+    }
+    section.ofertas img{
+        width: 14vw;   
+    }
+    .addCarrinho{
+        height: 4vh;
+        font-size: 12px;
+    }
+    .nomeJogo{
+        font-size: 18px;
+    }
+    .preco{
+        font-size: 18px;
+    }
+
+    /*Carrinho*/
+    section.paginaCarrinho{
+        width: 60vw;
+    }
+    section.paginaCarrinho h2{
+        font-size: 25px;
+    }
+    section.paginaCarrinho table{
+        width: 44vw;
+    }
+    .cabecalhoTabela{
+        font-size: 20px;
+    }
+    .finalTabela{
+        font-size: 20px;
+    }
+    .produtoCarrinho span{
+        font-size: 18px;
+    }
+    .quantProduto{
+        width: 2.5vw;
+        height: 3vh;
+    }
+    button.botaoRemovedor{
+        width: 5vw;
+        font-size: 13px;
+    }
+    .botaoDeCompra{
+        height: 4vh;
+        font-size: 18px;
+    }
+
+
+
+    /*Página contato*/
+    .pagContato table{
+        width: 28vw;
+    }
+    .pagContato h3{
+        font-size: 30px;
+    }
+    .pagContato p {
+        font-size: 19px;
+    }
+    .pagContato th, td{
+        font-size: 20px;
+    }
+    .icon img{
+        width: 2.5vw;
+    }
+
+
+
+
+
+    /*Footer*/
+    footer span{
+        font-size: 18px;
+    }
+    section.dev{
+        font-size: 18px;
+    }
+    section.designer{
+        font-size: 18px;
+    }
+} 
+
+/*Tela PC gamer */
+@media (max-width: 1500px){
+    /*Header*/
+    img.logo{
+        width: 9vw;
+    }
+    li{
+        font-size: 25px;
+    }
+    header button{
+        height: 4vh;
+    }
+    .botao button{
+        font-size: 15px;
+    }
+    img#login{
+        width: 1rem;
+    }
+
+
+
+
+
+        /*Main*/
+    /*Página Inicio*/
+    section.carrossel1{
+        height: 54vh;
+        width: 60vw;  
+    }
+    section.carrossel1 img{ 
+        height: 54vh;
+        width: 60vw;
+    }
+    section.apresentacao{
+        width: 60vw;
+    }
+    section.apresentacao h1{
+        font-size: 30px;
+    }
+    section.apresentacao p{
+        font-size: 20px;
+    }
+
+
+
+
+
+    /*Página Loja*/
+    /*Loja*/
+    section.ofertas{
+        width: 60vw;
+    }
+    section.ofertas h1{
+        font-size: 28px;
+    }
+    section.ofertas h2{
+        font-size: 24px;
+    }
+    div.ofertas{
+        width: auto;
+    }
+    section.ofertas img{
+        width: 12vw;   
+    }
+    .addCarrinho{
+        height: 3.4vh;
+        font-size: 10px;
+    }
+    .nomeJogo{
+        font-size: 15px;
+    }
+    .preco{
+        font-size: 15px;
+    }
+
+    /*Carrinho*/
+    section.paginaCarrinho{
+        width: 60vw;
+    }
+    section.paginaCarrinho h2{
+        font-size: 24px;
+    }
+    section.paginaCarrinho table{
+        width: 44vw;
+    }
+    .cabecalhoTabela{
+        font-size: 17px;
+    }
+    .finalTabela{
+        font-size: 17px;
+    }
+    .produtoCarrinho span{
+        font-size: 15px;
+    }
+    .quantProduto{
+        width: 2.5vw;
+        height: 3vh;
+    }
+    button.botaoRemovedor{
+        width: 5vw;
+        font-size: 11px;
+    }
+    .botaoDeCompra{
+        height: 3.8vh;
+        font-size: 15px;
+    }
+
+
+
+    /*Página contato*/
+    .pagContato table{
+        width: 28vw;
+    }
+    .pagContato h3{
+        font-size: 30px;
+    }
+    .pagContato p {
+        font-size: 19px;
+    }
+    .pagContato th, td{
+        font-size: 20px;
+    }
+    .icon img{
+        width: 2.5vw;
+    }
+
+
+
+
+    /*Página contato*/
+    .pagContato table{
+        width: 28vw;
+    }
+    .pagContato h3{
+        font-size: 30px;
+    }
+    .pagContato p {
+        font-size: 19px;
+    }
+    .pagContato th, td{
+        font-size: 20px;
+    }
+    .icon img{
+        width: 2.5vw;
+    }
+
+
+
+
+
+    /*Footer*/
+    footer span{
+        font-size: 18px;
+    }
+    section.dev{
+        font-size: 18px;
+    }
+    section.designer{
+        font-size: 18px;
+    }
+}
+/*Tela de notebook */
+@media (max-width: 1220px){
+    /*Header*/
+    img.logo{
+        width: 10vw;
+    }
+    li{
+        font-size: 22px;
+    }
+    header button{
+        height: 4vh;
+    }
+    .botao button{
+        font-size: 14px;
+    }
+    img#login{
+        width: 0.9rem;
+    }
+
+
+
+
+        /*Main*/
+    /*Página Inicio*/
+    section.carrossel1{
+        height: 45vh;
+        width: 60vw;  
+    }
+    section.carrossel1 img{ 
+        height: 45vh;
+        width: 60vw;
+    }
+    section.apresentacao{
+        width: 60vw;
+    }
+    section.apresentacao h1{
+        font-size: 27px;
+    }
+    section.apresentacao p{
+        font-size: 18px;
+    }
+
+
+
+
+    /*Página Loja*/
+    /*Loja*/
+    section.ofertas{
+        width: 60vw;
+    }
+    section.ofertas h1{
+        font-size: 27px;
+    }
+    section.ofertas h2{
+        font-size: 23px;
+    }
+    div.ofertas{
+        width: auto;
+    }
+    section.ofertas img{
+        width: 14vw;   
+    }
+    .addCarrinho{
+        height: 3.7vh;
+        font-size: 9px;
+    }
+    .nomeJogo{
+        font-size: 14px;
+    }
+    .preco{
+        font-size: 14px;
+    }
+
+    /*Carrinho*/
+    section.paginaCarrinho{
+        width: 60vw;
+    }
+    section.paginaCarrinho h2{
+        font-size: 23px;
+    }
+    section.paginaCarrinho table{
+        width: 35vw;
+    }
+    .cabecalhoTabela{
+        font-size: 14px;
+    }
+    .finalTabela{
+        font-size: 14px;
+    }
+    section.paginaCarrinho img{
+        width: 5vw;  
+    }
+    .produtoCarrinho span{
+        font-size: 12px;
+    }
+    .quantProduto{
+        width: 2.3vw;
+        height: 2.7vh;
+    }
+    button.botaoRemovedor{
+        width: 7.5vw;
+        font-size: 11px;
+    }
+    .botaoDeCompra{
+        height: 3.9vh;
+        font-size: 15px;
+    }
+
+
+
+    /*Página contato*/
+    .pagContato table{
+        width: 28vw;
+    }
+    .pagContato h3{
+        font-size: 22px;
+    }
+    .pagContato p {
+        font-size: 14px;
+    }
+    .pagContato th, td{
+        font-size: 14px;
+    }
+    .icon img{
+        width: 2.7vw;
+    }
+
+
+
+
+
+    /*Footer*/
+    footer span{
+        font-size: 15px;
+    }
+    section.dev{
+        font-size: 15px;
+    }
+    section.designer{
+        font-size: 15px;
+    }
+}
+
+/*Tela de tablet */
+@media (max-width: 850px){
+    /*Header*/
+    img.logo{
+        width: 12vw;
+    }
+    li{
+        font-size: 22px;
+    }
+    header button{
+        height: 4vh;
+    }
+    .botao button{
+        font-size: 14px;
+    }
+    img#login{
+        width: 0.9rem;
+    }
+
+
+
+
+
+        /*Main*/
+    /*Página Inicio*/
+    section.carrossel1{
+        height: 52vh;
+        width: 100vw;  
+    }
+    section.carrossel1 img{ 
+        height: 52vh;
+        width: 100vw;
+    }
+    section.apresentacao{
+        width: 100vw;
+    }
+    section.apresentacao h1{
+        font-size: 22px;
+    }
+    section.apresentacao p{
+        font-size: 15px;
+    }
+
+
+
+
+    /*Página Loja*/
+    /*Loja*/
+    section.ofertas{
+        width: 100vw;
+    }
+    section.ofertas h1{
+        font-size: 27px;
+    }
+    section.ofertas h2{
+        font-size: 23px;
+    }
+    div.ofertas{
+        width: auto;
+    }
+    section.ofertas img{
+        width: 14vw;   
+    }
+    .addCarrinho{
+        height: 3.7vh;
+        font-size: 9px;
+    }
+    .nomeJogo{
+        font-size: 14px;
+    }
+    .preco{
+        font-size: 14px;
+    }
+
+    /*Carrinho*/
+    section.paginaCarrinho{
+        width: 100vw;
+    }
+    section.paginaCarrinho h2{
+        font-size: 23px;
+    }
+    section.paginaCarrinho table{
+        width: 35vw;
+    }
+    .cabecalhoTabela{
+        font-size: 14px;
+    }
+    .finalTabela{
+        font-size: 14px;
+    }
+    section.paginaCarrinho img{
+        width: 7vw;  
+    }
+    .produtoCarrinho span{
+        font-size: 12px;
+    }
+    .quantProduto{
+        width: 2.3vw;
+        height: 2.7vh;
+    }
+    button.botaoRemovedor{
+        width: 9vw;
+        font-size: 11px;
+    }
+    .botaoDeCompra{
+        height: 3.9vh;
+        font-size: 15px;
+    }
+
+
+
+
+    /*Página contato*/
+    .pagContato{
+        width: 100vw;
+    }
+    .pagContato table{
+        width: 44vw;
+    }
+    .pagContato h3{
+        font-size: 30px;
+    }
+    .pagContato p {
+        font-size: 19px;
+    }
+    .pagContato th, td{
+        font-size: 20px;
+    }
+    .icon img{
+        width: 2.5vw;
+    }
+
+
+
+
+
+    /*Footer*/
+    footer span{
+        font-size: 13px;
+    }
+    section.dev{
+        font-size: 13px;
+    }
+    section.designer{
+        font-size: 13px;
+    }
+
+}
